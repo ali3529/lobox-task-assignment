@@ -9,6 +9,7 @@ export default defineConfig({
       "@styles": "/src/styles",
       "@components": "/src/components",
       "@hooks": "/src/hooks",
+      "@shared": "/src/shared",
     },
   },
 });
