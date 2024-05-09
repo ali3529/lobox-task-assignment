@@ -1,5 +1,5 @@
 import { DropDown } from "@components";
-import "@styles/components/_app.scss";
+import "@styles/components/App.scss";
 const App = () => {
   return (
     <div className="app">
