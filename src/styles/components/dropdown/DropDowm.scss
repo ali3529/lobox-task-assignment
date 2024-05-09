@@ -8,7 +8,7 @@
 .dropdown-select-box {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding: 16px;
   width: 100%;
@@ -52,12 +52,15 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 12px;
+  gap: 8px;
   overflow-y: scroll;
   height: 250px;
   padding-right: 4px;
 }
 .dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family: sans-serif;
   width: 100%;
   color: #777b85;
@@ -70,9 +73,12 @@
 }
 
 .dropdown-item:hover {
-  font-family: sans-serif;
   background-color: #f2f4ff;
-  font-weight: 500;
-  font-size: 16px;
+  color: #778ce3;
   cursor: pointer;
+}
+
+.dropdown-item.selected {
+  background-color: #f2f4ff;
+  color: #778ce3;
 }
