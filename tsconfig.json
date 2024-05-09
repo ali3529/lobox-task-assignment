@@ -5,6 +5,7 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+  
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -18,8 +19,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "./", 
+    "paths": {
+      "@components": ["src/components/index.ts"],
+      "@hooks": ["src/hooks/index.ts"],
+      "@styles/*": ["src/styles/*"],
+    },
   },
+ 
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
