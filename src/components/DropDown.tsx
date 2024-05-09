@@ -7,7 +7,21 @@ export const DropDown = () => {
       </div>
       <div className="dropdown-box-container">
         <div className="dropdown-items-container">
-          {["Art", "Education", "Sport", "Games", "Health","Art", "Education", "Sport", "Games", "Health",].map((item) => (
+          {[
+            "Art 😁",
+            "Education 🚀",
+            "Sport ⚽",
+            "Games 🎮",
+            "Health 🏥",
+            "Art 🎭", 
+            "Art 😁",
+            "Education 🚀",
+            "Sport ⚽",
+            "Games 🎮",
+            "Health 🏥",
+            "Art 🎭",
+
+          ].map((item) => (
             <div className="dropdown-item">{item}</div>
           ))}
         </div>
