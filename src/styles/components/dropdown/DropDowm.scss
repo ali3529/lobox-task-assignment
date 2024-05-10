@@ -1,7 +1,8 @@
 @use "../../abstracts/colors" as color;
 
 .dropdown-container {
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   position: relative;
 }
 
@@ -18,10 +19,14 @@
   border: 2px solid #8c9bdc;
   font-family: sans-serif;
 
-  cursor: pointer;
-
   box-shadow: rgba(211, 221, 247, 0.5) 0px 0em 1px 4px,
     rgba(221, 226, 248, 0.3) 0px 2px 16px 0px;
+}
+
+@media (hover: hover) {
+  .dropdown-button {
+    cursor: pointer;
+  }
 }
 .dropdown-button span {
   color: #909396;
@@ -81,7 +86,7 @@
   font-size: 16px;
   padding: 12px;
   border-radius: 10px;
-  cursor: pointer;
+
   transition: background-color 100ms ease-in-out;
 }
 

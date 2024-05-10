@@ -11,8 +11,10 @@ export const DropDownInput: FC<IDropDownInput> = ({ onSubmitValue }) => {
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
-      onSubmitValue(value);
-      setValue("");
+      if (value.trim() != "") {
+        onSubmitValue(value);
+        setValue("");
+      }
     }
   };
   return (

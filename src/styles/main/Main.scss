@@ -16,7 +16,7 @@ html {
   overflow: hidden;
   overscroll-behavior-x: none;
   background-color: #ffffff;
-
+  touch-action: manipulation;
   scrollbar-width: thin;
 }
 
@@ -39,9 +39,9 @@ body {
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0; 
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -51,7 +51,6 @@ ul {
 ::-webkit-scrollbar-thumb {
   background-color: #c5c8cd;
   border-radius: 6px;
-  
 }
 
 ::-webkit-scrollbar-thumb:hover {
