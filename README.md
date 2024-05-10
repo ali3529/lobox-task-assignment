@@ -18,3 +18,8 @@ React + TypeScript + Vite +Scss
         ))}
       </DropDown>
 ```
+run project:
+```bash
+  npm install
+  npm run dev
+```
