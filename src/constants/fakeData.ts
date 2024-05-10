@@ -4,11 +4,6 @@ export const DROP_DOWN_FAKE_DATA:string[]=[
     "Sport ⚽",
     "Games 🎮",
     "Health 🏥",
-    "Art 🎭",
-    "Art 😁",
-    "Education 🚀",
-    "Sport ⚽",
-    "Games 🎮",
-    "Health 🏥",
-    "Art 🎭",
+    "Action 🎭",
+    "Adventure 😁"
   ]

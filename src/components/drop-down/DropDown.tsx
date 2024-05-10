@@ -5,31 +5,28 @@ import { DropDownContainer } from "./DropDownContainer";
 import { DropDownButton } from "./DropDownButton";
 import { DropDownListContainer } from "./DropDownListContainer";
 import { DropDownContext } from "@shared/context";
-import { useOnClickOutside } from "@hooks";
 
 interface IDropDown {
   children: React.ReactNode;
-  deafultValue?: string;
-  onChange: (item: string) => void;
+  deafultValue?: string[];
+  onChange: (items: string[]) => void;
 }
 export const DropDown: FC<IDropDown> = ({
   children,
   onChange,
-  deafultValue,
+  deafultValue = [],
 }) => {
-  const [selectedItem, setSelectedItem] = useState<string>("");
+  const [selectedItem, setSelectedItem] = useState<string[]>(deafultValue);
   const [dropDownStatus, toggleDropDown] = useState<boolean>(false);
 
   useEffect(() => {
     onChange(selectedItem);
   }, [selectedItem]);
 
-
-
   return (
     <DropDownContext.Provider
       value={{
-        selected: selectedItem ? selectedItem : deafultValue,
+        selected: selectedItem,
         setSelectedItem: setSelectedItem,
         toggleDropDown: toggleDropDown,
         dropDownStatus: dropDownStatus,

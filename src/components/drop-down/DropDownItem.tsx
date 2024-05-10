@@ -3,25 +3,29 @@ import { CheckIcon } from "@shared/icons";
 import clsx from "clsx";
 import React, { FC, useContext } from "react";
 
-
 interface IDropDownItem {
   value: string;
   children?: React.ReactNode;
 }
 
 export const DropDownItem: FC<IDropDownItem> = ({ value, children }) => {
-  const { selected, setSelectedItem, toggleDropDown } =
-    useContext(DropDownContext);
+  const { selected, setSelectedItem } = useContext(DropDownContext);
 
   const handleSelectedItem = (item: string) => {
-    setSelectedItem(item);
-    toggleDropDown(false);
+    let newItems: string[];
+    if (selected.includes(item)) {
+      newItems = selected.filter((existingItem) => existingItem !== item);
+    } else {
+      newItems = [...selected, item];
+    }
+    setSelectedItem(newItems);
   };
+  const isItemSelected = () => selected?.includes(value);
 
   return (
     <li
       onClick={() => handleSelectedItem(value)}
-      className={clsx("dropdown-item", selected === value && "selected")}
+      className={clsx("dropdown-item", isItemSelected() && "selected")}
     >
       {children}
       <span>
