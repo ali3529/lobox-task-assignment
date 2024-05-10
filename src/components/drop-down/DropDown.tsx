@@ -1,6 +1,6 @@
 import "@styles/components/dropdown/DropDowm.scss";
 
-import { FC, useContext, useEffect, useRef, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { DropDownContainer } from "./DropDownContainer";
 import { DropDownButton } from "./DropDownButton";
 import { DropDownListContainer } from "./DropDownListContainer";
