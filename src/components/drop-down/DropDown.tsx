@@ -1,10 +1,12 @@
 import "@styles/components/dropdown/DropDowm.scss";
 
-import { FC, useContext, useEffect, useState } from "react";
+import { FC, useContext, useEffect, useRef, useState } from "react";
 import { DropDownContainer } from "./DropDownContainer";
 import { DropDownButton } from "./DropDownButton";
 import { DropDownListContainer } from "./DropDownListContainer";
-import DropDownContext from "./context/DropDownContext";
+import { DropDownContext } from "@shared/context";
+import { useOnClickOutside } from "@hooks";
+
 interface IDropDown {
   children: React.ReactNode;
   deafultValue?: string;
@@ -21,6 +23,8 @@ export const DropDown: FC<IDropDown> = ({
   useEffect(() => {
     onChange(selectedItem);
   }, [selectedItem]);
+
+
 
   return (
     <DropDownContext.Provider

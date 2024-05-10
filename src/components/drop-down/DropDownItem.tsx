@@ -1,7 +1,8 @@
+import { DropDownContext } from "@shared/context";
 import { CheckIcon } from "@shared/icons";
 import clsx from "clsx";
 import React, { FC, useContext } from "react";
-import DropDownContext from "./context/DropDownContext";
+
 
 interface IDropDownItem {
   value: string;

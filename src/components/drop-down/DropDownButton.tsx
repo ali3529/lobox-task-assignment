@@ -1,7 +1,8 @@
+import { DropDownContext } from "@shared/context";
 import { ChevronUpIcon } from "@shared/icons";
 import clsx from "clsx";
 import { useContext } from "react";
-import DropDownContext from "./context/DropDownContext";
+
 
 export const DropDownButton = () => {
   const { selected, toggleDropDown, dropDownStatus } =

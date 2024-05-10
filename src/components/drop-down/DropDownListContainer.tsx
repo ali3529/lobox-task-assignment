@@ -1,6 +1,7 @@
+
+import { DropDownContext } from "@shared/context";
 import clsx from "clsx";
 import { FC, useContext } from "react";
-import DropDownContext from "./context/DropDownContext";
 
 interface IDropDownListContainer {
   children: React.ReactNode;
@@ -8,12 +9,13 @@ interface IDropDownListContainer {
 export const DropDownListContainer: FC<IDropDownListContainer> = ({
   children,
 }) => {
-  const { dropDownStatus: dropDownToggleStatus } = useContext(DropDownContext);
+  const { dropDownStatus } = useContext(DropDownContext);
+
   return (
     <div
       className={clsx(
         "dropdown-list-container",
-        dropDownToggleStatus ? "active" : ""
+        dropDownStatus ? "active" : ""
       )}
     >
       <ul className="dropdown-items-container">{children}</ul>

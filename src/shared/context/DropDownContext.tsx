@@ -7,8 +7,8 @@ export interface DropDownContextProps {
   toggleDropDown: (status: boolean) => void;
 }
 
-const DropDownContext = React.createContext<DropDownContextProps>(
+export const DropDownContext = React.createContext<DropDownContextProps>(
   {} as DropDownContextProps
 );
 
-export default DropDownContext;
+ 
