@@ -1,5 +1,5 @@
 # Lobox Task Assignment
-React + TypeScript + Vite +Scss
+React + TypeScript + Vite + Scss
 
 
 
