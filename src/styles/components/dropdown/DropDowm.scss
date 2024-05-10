@@ -16,7 +16,7 @@
   height: 46px;
   background-color: color.$white;
   border-radius: 16px;
-  border: 2px solid #8c9bdc;
+  border: 2px solid color.$light-blue;
   font-family: sans-serif;
 
   box-shadow: rgba(211, 221, 247, 0.5) 0px 0em 1px 4px,
@@ -29,13 +29,13 @@
   }
 }
 .dropdown-button span {
-  color: #909396;
+  color: color.$gray;
   font-weight: 500;
   font-size: 16px;
   width: fit-content;
 }
 .dropdown-button span {
-  color: #909396;
+  color: color.$gray;
   font-weight: 500;
   font-size: 16px;
 }
@@ -146,20 +146,20 @@
   border-radius: 12px;
   border: 2px solid #d5d8dc;
   font-family: sans-serif;
-  color: #7c7d7f;
+  color: color.$light-gray;
   font-weight: 500;
   font-size: 14px;
   margin-top: 12px;
   cursor: pointer;
 }
 .dropdown-input:focus {
-  outline: #778ce3;
-  border: 2px solid #8c9bdc;
+  outline: color.$blue;
+  border: 2px solid color.$light-blue;
   box-shadow: rgba(211, 221, 247, 0.5) 0px 0em 1px 2px,
     rgba(221, 226, 248, 0.3) 0px 2px 16px 0px;
 }
 .dropdown-input::placeholder {
-  color: #909396;
+  color: color.$gray;
   font-weight: 500;
   font-size: 14px;
   width: fit-content;
