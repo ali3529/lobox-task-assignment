@@ -1,2 +1,2 @@
-export {ChevronUp} from './ChevronUp.icon'
-export {Check} from './Check.icon'
+export {ChevronUpIcon} from './ChevronUpIcon.icon'
+export {CheckIcon} from './CheckIcon.icon'

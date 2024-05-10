@@ -26,6 +26,7 @@
       "@hooks": ["src/hooks/index.ts"],
       "@styles/*": ["src/styles/*"],
       "@shared/*": ["src/shared/*"],
+      "@constants/*": ["src/constants/*"],
     },
   },
  
