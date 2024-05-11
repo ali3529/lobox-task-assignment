@@ -108,6 +108,11 @@
   opacity: 1;
 }
 
+.chevron-icon-container{
+  width: 18px;
+  height: 18px;
+}
+
 .chevron {
   transform: rotate(0deg);
   transition: transform 0.1s ease-in-out;

@@ -28,8 +28,8 @@ export const DropDownItem: FC<IDropDownItem> = ({ value, children }) => {
       className={clsx("dropdown-item", isItemSelected() && "selected")}
     >
       {children}
-      <span>
-        <CheckIcon width={18} height={18} />
+      <span className="chevron-icon-container">
+        {isItemSelected() ? <CheckIcon width={18} height={18} /> : <></>}
       </span>
     </li>
   );
